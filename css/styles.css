@@ -161,7 +161,7 @@ body, html {
 		top: 70%;}
   }
 
-  @media screen and (max-height: 368px) {
+  @media screen and (max-height: 768px) {
 	h2 {
 	  font-size: 18px;}
 
