@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PreciOff_contacto</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <link rel="shortcut icon" href="../web/pf/images/icon/icon.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../web/off/css/owl.carousel.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../web/off/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Botones Flotantes -->
+    <div class="carrito-container">
+        <div class="carrito-icon">
+            <div class="carrito-iconos">
+                <a class="text-dark carrito-iconos" href="https://www.facebook.com/AnderMv936?mibextid=ZbWKwL" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="text-dark carrito-iconos" href="https://wa.me/59169006500" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="text-dark carrito-iconos" href="https://goo.gl/maps/c6aHCKx8C9CR4t2x5" target="_blank">
+                    <i class="fa fa-map-marker"></i>
+                </a>
+                <a class="text-dark carrito-iconos" href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="text-primary carrito-iconos">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="vista-preliminar" id="vista-preliminar">
+        <div class="vista-preliminar-content">
+          <h3>Productos Seleccionados</h3>
+          <ul id="productos-seleccionados">
+            <!-- Aquí se agregarán los productos seleccionados dinámicamente -->
+          </ul>
+          <button class="cerrar" id="cerrar-vista-preliminar">X</button>
+        </div>
+    </div>
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    
+    <a href="https://api.whatsapp.com/send?phone=59169006500" class="whatsapp-btn back-to-top" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Botones Flotantes -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid"><!--sticky-top-->
+        <div class="row align-items-center py-0 px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="logo ">
+                    <div class="oval"></div>
+                    <div class="circle"></div>
+                    <div class="line"></div>
+                    <div class="text-icon">Preci
+                        <span class="color1"></span>
+                    </div>
+                    <div class="text-icon2">ff</div>
+                    <div class="text-icon3">on</div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar Productos">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                            <a class="text-dark pl-2">
+                                <input type="checkbox" id="dark-mode-toggle" name="theme-dark-mode-toggle" class="dark-mode-toggle-checkbox">
+                                <label for="dark-mode-toggle" class="dark-mode-toggle-label"></label>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-6 text-right">
+                <a class="text-dark px-2" href="https://www.facebook.com/AnderMv936?mibextid=ZbWKwL" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="text-dark px-2" href="https://wa.me/59169006500" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="text-dark px-2" href="https://goo.gl/maps/c6aHCKx8C9CR4t2x5" target="_blank">
+                    <i class="fa fa-map-marker"></i>
+                </a>
+                <a class="text-dark px-2" href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="off_cart.html" class="btn text-dark px-2">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid mb-0 sticky-top">
+        <div class="row border-top px-xl-5">
+
+            <div class="col-lg-2 d-none d-lg-block ">
+                <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" id="btn-categorias" style="height: 45px; margin-top: 10px; padding: 0 30px;">
+                    <i class="fas fa-bars text-dark"></i>
+                    <button class="m-0 btn text-white w-100">Categorías</button>
+                </a>
+                <div id="categorias-container">
+                    <ul class="categorias-lista">
+                        <div class="">
+                        <h4>Limpieza Hogar</h4>
+                        <li><a href="#">Detergentes</a></li>
+                        <li><a href="#">Utencilios</a></li>
+                        <li><a href="#">Cocina</a></li>
+                        </div>
+                        <div class="">
+                        <h4>Maquillaje</h4>
+                        <li><a href="#">Maybelline Ojos</a></li>
+                        <li><a href="#">Maybelline Rostro</a></li>
+                        <li><a href="#">Maybelline Labios</a></li>
+                        </div>
+                        <div class="">
+                        <h4>Cuidado Facial</h4>
+                        <li><a href="#">Crema</a></li>
+                        <li><a href="#">Agua Micelar</a></li>
+                        <li><a href="#">Anti-Arrugas</a></li>
+                        </div>
+                        <div class="">
+                        <h4>Cuidado Capilar</h4>
+                        <li><a href="#">Elvive</a></li>
+                        <li><a href="#">Fructis</a></li>
+                        <li><a href="#">Kids</a></li>
+                        </div>
+                        <div class="">
+                        <h4>Alimentos</h4>
+                        <li><a href="#">Edulcorantes</a></li>
+                        <li><a href="#">Dulces</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold">Preci<span class="text-primary font-weight-bold border px-3 mr-1">Off</span></h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="off_index.html" class="nav-item nav-link">Inicio</a>
+                            <a href="off_shop.html" class="nav-item nav-link">Tienda</a>
+                            <!--
+                            <a href="off_cart.html" class="nav-item nav-link">Carrito</a>
+                            <a href="off_cursos.html" class="nav-item nav-link">Cursos</a>
+                            -->
+                            <a href="off_contact.html" class="nav-item nav-link active">Contactanos</a>
+                            <a href="off_nosotros.html" class="nav-item nav-link">Nosotros</a>
+                            <a href="off_empresas.html" class="nav-item nav-link">Quiero Vender</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-secondary mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 200px">
+            <h1 class="font-weight-semi-bold text-uppercase mb-3">Contactanos</h1>
+            <div class="d-inline-flex">
+                <p class="m-0"><a>Inicio</a></p>
+                <p class="m-0 px-2">-</p>
+                <p class="m-0">Contactanos</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid pt-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5"><span class="px-2">Contacto</span></h2>
+        </div>
+        <div class="row px-xl-5">
+            <div class="col-lg-6 mb-5">
+                <div class="contact-form">
+                    <div id="success"></div>
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="name" placeholder="Nombre"
+                                required="required" data-validation-required-message="Please enter your name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control" id="email" placeholder="Correo"
+                                required="required" data-validation-required-message="Please enter your email" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="subject" placeholder="Asunto"
+                                required="required" data-validation-required-message="Please enter a subject" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control" rows="6" id="message" placeholder="Mensaje"
+                                required="required"
+                                data-validation-required-message="Please enter your message"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5">
+                <h5 class="font-weight-semi-bold mb-3">Contáctanos</h5>
+                <p>Si te interesa alguno de nuestros productos o deseas informacion adicional, no dudes en ponerte en contacto con nosotros</p>
+                <div class="d-flex flex-column mb-3">
+                    <h5 class="font-weight-semi-bold mb-3">Contacto 1</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Santa Cruz - Bolivia</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>andermv936@gmail.com</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary mr-3"></i>+591 6900 6500</p>
+                </div>
+                <div class="d-flex flex-column">
+                    <h5 class="font-weight-semi-bold mb-3">Contacto 2</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Santa Cruz - Bolivia</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>josmith161096@gmail.com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+591 7707 7322</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Puntos -->
+    <div class="container-fluid mb-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5"><span class="px-2">Puntos</span></h2>
+        </div>
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-3 mb-5 d-none d-lg-block">
+                <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0">Puntos de Recojo</h6>
+                    <i class="fa fa-map-marked text-dark"></i>
+                </a>
+                <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border-top-0 border-bottom-0" id="navbar-vertical">
+                    <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                        <div class="nav-item dropdown">
+                            <a class="nav-link bg-secondary" href="https://goo.gl/maps/fSRyXxFM7fBu33AR6" target="_blank"> km10, Banzer<i class="float-right mt-1"></i></a>
+                            <div class="border-0 rounded-0 w-100 m-0">
+                                <a class="dropdown-item">Sabado y Domingo</a>
+                                <a class="dropdown-item">10:00-18:00</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link bg-secondary" href="https://goo.gl/maps/3e1JkQV19dUxnCy17" target="_blank">4to Anillo, Mutualista<i class="float-right mt-1"></i></a>
+                            <div class="border-0 rounded-0 w-100 m-0">
+                                <a class="dropdown-item">Sabado y Domingo</a>
+                                <a class="dropdown-item">10:00-18:00</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link bg-secondary" href="https://goo.gl/maps/vv1oRhh6nENNzs639" target="_blank">3er Anillo, Abasto<i class="float-right mt-1"></i></a>
+                            <div class="border-0 rounded-0 w-100 m-0">
+                                <a class="dropdown-item">Sabado y Domingo</a>
+                                <a class="dropdown-item">10:00-18:00</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link bg-secondary" href="https://goo.gl/maps/DvR8YoQv4o7zQsxT7" target="_blank">3er Anillo, Alto San Pedro<i class="float-right mt-1"></i></a>
+                            <div class="border-0 rounded-0 w-100 m-0">
+                                <a class="dropdown-item">Sabado y Domingo</a>
+                                <a class="dropdown-item">10:00-18:00</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-9 mb-5">    
+                <div class="d-flex flex-column justify-content-start">
+                    <div id="map" style="height: 500px;"></div>
+                    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+                    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Puntos End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-dark mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <a href="" class="text-decoration-none">
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <div class="logo ">
+                            <div class="oval"></div>
+                            <div class="circle"></div>
+                            <div class="line"></div>
+                            <div class="text-icon">Preci
+                                <span class="color1"></span>
+                            </div>
+                            <div class="text-icon2">ff</div>
+                            <div class="text-icon3">on</div>
+                        </div>
+                    </div>
+                </a>
+                <p>Gracias por pasar por nuestra pagina, espero contactarnos pronto</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Santa Cruz - Bolivia</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>offerta@gmail.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+591 6900 6500</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-9 mb-5">
+                        <!--
+                        <h5 class="font-weight-bold text-dark mb-4">Ubicaciones</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <div id="map"></div>
+                            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+                            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+                        </div>
+                        -->
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Boletin</h5>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 py-4" placeholder="Tu Nombre" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 py-4" placeholder="Tu Correo"
+                                    required="required" />
+                            </div>
+                            <div>
+                                <button class="btn btn-primary btn-block border-0 py-3" type="submit">Suscribirte</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../web/off/js/easing.min.js"></script>
+    <script src="../web/off/js/owl.carousel.min.js"></script>
+    <!-- Contact Javascript File -->
+    <script src="../web/off/js/jqBootstrapValidation.min.js"></script>
+    <script src="../web/off/js/contact.js"></script>
+    <!-- Template Javascript -->
+    <script src="../web/off/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PreciOff</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <link rel="shortcut icon" href="../web/pf/images/icon/icon.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="../web/off/css/owl.carousel.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../web/off/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Botones Flotantes -->
+    <div class="carrito-container">
+        <div class="carrito-icon">
+            <div class="carrito-iconos">
+                <a class="text-dark carrito-iconos" href="https://www.facebook.com/AnderMv936?mibextid=ZbWKwL" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="text-dark carrito-iconos" href="https://wa.me/59169006500" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="text-dark carrito-iconos" href="https://goo.gl/maps/c6aHCKx8C9CR4t2x5" target="_blank">
+                    <i class="fa fa-map-marker"></i>
+                </a>
+                <a class="text-dark carrito-iconos" href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="text-primary carrito-iconos">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="vista-preliminar" id="vista-preliminar">
+        <div class="vista-preliminar-content">
+          <h3>Productos Seleccionados</h3>
+          <ul id="productos-seleccionados">
+            <!-- Aquí se agregarán los productos seleccionados dinámicamente -->
+          </ul>
+          <button class="cerrar" id="cerrar-vista-preliminar">X</button>
+        </div>
+    </div>
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    
+    <a href="https://api.whatsapp.com/send?phone=59169006500" class="whatsapp-btn back-to-top" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Botones Flotantes -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid"><!--sticky-top-->
+        <div class="row align-items-center py-0 px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="logo ">
+                    <div class="oval"></div>
+                    <div class="circle"></div>
+                    <div class="line"></div>
+                    <div class="text-icon">Preci
+                        <span class="color1"></span>
+                    </div>
+                    <div class="text-icon2">ff</div>
+                    <div class="text-icon3">on</div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar Productos">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                            <a class="text-dark pl-2">
+                                <input type="checkbox" id="dark-mode-toggle" name="theme-dark-mode-toggle" class="dark-mode-toggle-checkbox">
+                                <label for="dark-mode-toggle" class="dark-mode-toggle-label"></label>
+                            </a>
+                            <!--
+                            <nav class="">
+                                <button class="" id="switch">
+                                  <span><i class="fa fa-sun"></i></span>
+                                  <span><i class="fa fa-moon"></i></span>
+                            </nav>
+                            -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-6 text-right">
+                <a class="text-dark px-2" href="https://www.facebook.com/AnderMv936?mibextid=ZbWKwL" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="text-dark px-2" href="https://wa.me/59169006500" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="text-dark px-2" href="https://goo.gl/maps/c6aHCKx8C9CR4t2x5" target="_blank">
+                    <i class="fa fa-map-marker"></i>
+                </a>
+                <a class="text-dark px-2" href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="off_cart.html" class="btn text-dark px-2">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Barra superior -->
+    <div class="container-fluid mb-5 sticky-top">
+        <div class="row border-top px-xl-5">
+
+            <div class="col-lg-2 d-none d-lg-block ">
+                <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" id="btn-categorias" style="height: 45px; margin-top: 10px; padding: 0 30px;">
+                    <i class="fas fa-bars text-dark"></i>
+                    <button class="m-0 btn text-white w-100">Categorías</button>
+                </a>
+                <div id="categorias-container">
+                    <ul class="categorias-lista">
+                        <div class="">
+                        <h4>Limpieza Hogar</h4>
+                        <li><a href="#">Detergentes</a></li>
+                        <li><a href="#">Utencilios</a></li>
+                        <li><a href="#">Cocina</a></li>
+                        </div>
+                        <div class="">
+                        <h4>Maquillaje</h4>
+                        <li><a href="#">Maybelline Ojos</a></li>
+                        <li><a href="#">Maybelline Rostro</a></li>
+                        <li><a href="#">Maybelline Labios</a></li>
+                        </div>
+                        <div class="">
+                        <h4>Cuidado Facial</h4>
+                        <li><a href="#">Crema</a></li>
+                        <li><a href="#">Agua Micelar</a></li>
+                        <li><a href="#">Anti-Arrugas</a></li>
+                        </div>
+                        <div class="">
+                        <h4>Cuidado Capilar</h4>
+                        <li><a href="#">Elvive</a></li>
+                        <li><a href="#">Fructis</a></li>
+                        <li><a href="#">Kids</a></li>
+                        </div>
+                        <div class="">
+                        <h4>Alimentos</h4>
+                        <li><a href="#">Edulcorantes</a></li>
+                        <li><a href="#">Dulces</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold">Preci<span class="text-primary font-weight-bold border px-3 mr-1">Off</span></h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="off_index.html" class="nav-item nav-link active">Inicio</a>
+                            <a href="off_shop.html" class="nav-item nav-link">Tienda</a>
+                            <!--
+                            <a href="off_cart.html" class="nav-item nav-link">Carrito</a>
+                            <a href="off_cursos.html" class="nav-item nav-link">Cursos</a>
+                            -->
+                            <a href="off_contact.html" class="nav-item nav-link">Contactanos</a>
+                            <a href="off_nosotros.html" class="nav-item nav-link">Nosotros</a>
+                            <a href="off_empresas.html" class="nav-item nav-link">Quiero Vender</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Barra superior -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid mb-5">
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0">Ofertas</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a>
+                <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border-top-0 border-bottom-0" id="navbar-vertical">
+                    <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Limpieza de Hogar<i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a class="dropdown-item">Detergentes</a>
+                                <a class="dropdown-item">Utencilios</a>
+                                <a class="dropdown-item">Cocina</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Maquillaje<i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a class="dropdown-item">Maybelline Ojos</a>
+                                <a class="dropdown-item">Maybelline Rostro</a>
+                                <a class="dropdown-item">Maybelline Labios</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Cuidado Facial<i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a class="dropdown-item">Cremas</a>
+                                <a class="dropdown-item">Agua Micelar</a>
+                                <a class="dropdown-item">Anti Arrugas</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Cuidado Capilar<i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a class="dropdown-item">Elvive</a>
+                                <a class="dropdown-item">Fructis</a>
+                                <a class="dropdown-item">Kids</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Alimentos<i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a class="dropdown-item">Edulcorantes</a>
+                                <a class="dropdown-item">Dulces</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="height: 410px;">
+                            <img class="img-fluid" src="off/img/carousel-1.jpg" alt="Image">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h5 class="text-light text-uppercase font-weight-medium mb-3"></h5>
+                                    <h3 class="display-4 text-white font-weight-semi-bold mb-4">Limpieza de Hogar</h3>
+                                    <a href="off_shop.html" class="btn btn-light py-2 px-3">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="height: 410px;">
+                            <img class="img-fluid" src="off/img/carousel-2.jpg" alt="Image">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h5 class="text-light text-uppercase font-weight-medium mb-3"></h5>
+                                    <h3 class="display-4 text-white font-weight-semi-bold mb-4">Maquillaje</h3>
+                                    <a href="off_shop.html" class="btn btn-light py-2 px-3">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="height: 410px;">
+                            <img class="img-fluid" src="off/img/carousel-3.jpg" alt="Image">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h5 class="text-light text-uppercase font-weight-medium mb-3"></h5>
+                                    <h3 class="display-4 text-white font-weight-semi-bold mb-4">Cuidado Facial</h3>
+                                    <a href="off_shop.html" class="btn btn-light py-2 px-3">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="height: 410px;">
+                            <img class="img-fluid" src="off/img/carousel-4.jpeg" alt="Image">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h5 class="text-light text-uppercase font-weight-medium mb-3"></h5>
+                                    <h3 class="display-4 text-white font-weight-semi-bold mb-4">Cuidado Capilar</h3>
+                                    <a href="off_shop.html" class="btn btn-light py-2 px-3">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="height: 410px;">
+                            <img class="img-fluid" src="off/img/carousel-5.jpg" alt="Image">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h5 class="text-light text-uppercase font-weight-medium mb-3"></h5>
+                                    <h3 class="display-4 text-white font-weight-semi-bold mb-4">Alimentos</h3>
+                                    <a href="off_shop.html" class="btn btn-light py-2 px-3">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                        <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                            <span class="carousel-control-prev-icon mb-n2"></span>
+                        </div>
+                    </a>
+                    <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                        <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                            <span class="carousel-control-next-icon mb-n2"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Featured Start -->
+    <div class="container-fluid pt-5">
+        <div class="row px-xl-5 pb-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-3x fa-check text-primary m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0">Marcas Originales</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-3x fa-money-check text-primary m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0">Precios Bajos</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-3x fa-tasks text-primary m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0">Stock Limitado</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-3x fa-calendar text-primary m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0">Entregas Domingo</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featured End -->
+
+    <!-- Products Start -->
+    <div class="container-fluid pt-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5"><span class="px-2">Productos</span></h2>
+        </div>
+        <div class="row px-xl-5 pb-3">
+            <div id="productos-container" class="row"></div>
+        </div>
+    </div>
+    <!-- Products End -->
+
+    <!-- Offer Start -->
+    <div class="container-fluid offer pt-5">
+        <div class="row px-xl-5">
+            <div class="col-md-6 pb-4">
+                <div class="position-relative bg-secondary text-center text-md-right text-white mb-2 py-5 px-5">
+                    <img src="off/img/offer-1.png" alt="">
+                    <div class="position-relative" style="z-index: 1;">
+                        <h5 class="text-uppercase text-primary mb-3">5% Descuento</h5>
+                        <h1 class="mb-4 font-weight-semi-bold" style="color: white;">Por compartir en tus redes</h1>
+                        <a href="off_shop.html" class="btn btn-outline-primary py-md-2 px-md-3">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 pb-4">
+                <div class="position-relative bg-secondary text-center text-md-left text-white mb-2 py-5 px-5">
+                    <img src="off/img/offer-2.png" alt="">
+                    <div class="position-relative" style="z-index: 1;">
+                        <h5 class="text-uppercase text-primary mb-3">Envio Gratis</h5>
+                        <h1 class="mb-4 font-weight-semi-bold" style="color: white;">Compras mayores a 100 Bs</h1>
+                        <a href="off_shop.html" class="btn btn-outline-primary py-md-2 px-md-3">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Offer End -->
+
+    <!-- Products Start -->
+    <div class="container-fluid pt-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5"><span class="px-2">Productos</span></h2>
+        </div>
+        <div class="row px-xl-5 pb-3">
+            <div id="productos-maquillaje" class="row"></div>
+        </div>
+    </div>
+    <!-- Products End -->
+
+    <!-- Subscribe Start -->
+    <div class="container-fluid bg-secondary my-5">
+        <div class="row justify-content-md-center py-0 px-xl-5">
+            <div class="col-md-6 col-12 py-5">
+                <div class="text-center mb-2 pb-2">
+                    <h2 class="section-title px-5 mb-3"><span class="bg-secondary px-2">Actualizate</span></h2>
+                    <p>Envia tu numero para estar al tanto de nuestras novedades</p>
+                </div>
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-white p-4" placeholder="Tu Numero">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-4">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe End -->
+
+    <!-- Products Start -->
+    <div class="container-fluid pt-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5"><span class="px-2">Productos</span></h2>
+        </div>
+        <div class="row px-xl-5 pb-3">
+            <div id="productos-alimentos" class="row"></div>
+        </div>
+    </div>
+    <!-- Products End -->
+
+    <!-- Personas Start 
+    <div class="container-fluid pt-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5"><span class="px-2">Colaboradores</span></h2>
+        </div>
+        <div class="row px-xl-5 pb-3 justify-content-xl-center">
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img class="img-fluid w-100" src="off/img/productos/product-2.jpg" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3">Rafael Moreira</h6>
+                        <h6 class="text-truncate mb-3">Industrial</h6>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center bg-light border">
+                        <a href="https://rafael936.wordpress.com/" target="_blank" class="btn btn-sm text-dark p-0"><i class="fas fa-2x fa-user text-primary mr-2"></i></a>                        
+                        <a href="https://wa.me/59169006500" target="_blank" class="btn btn-sm text-dark p-0"><i class="fab fa-2x fa-whatsapp text-primary mr-2"></i></a>
+                        <a href="https://www.linkedin.com/in/rafael-anderson-moreira-vargas-bb2b92234/" target="_blank" class="btn btn-sm text-dark p-0"><i class="fab fa-2x fa-linkedin text-primary mr-2"></i></a>
+                        <a href="https://www.facebook.com/AnderMv936?mibextid=ZbWKwL" target="_blank" class="btn btn-sm text-dark p-0"><i class="fab fa-2x fa-facebook text-primary mr-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img class="img-fluid w-100" src="off/img/productos/product-1.jpg" alt="">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3">Nicol Delgado</h6>
+                        <h6 class="text-truncate mb-3">Industrial</h6>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center bg-light border">
+                        <a href="https://rafael936.wordpress.com/" target="_blank" class="btn btn-sm text-dark p-0"><i class="fas fa-2x fa-user text-primary mr-2"></i></a>                        
+                        <a href="https://wa.me/59169006500" target="_blank" class="btn btn-sm text-dark p-0"><i class="fab fa-2x fa-whatsapp text-primary mr-2"></i></a>
+                        <a href="https://www.linkedin.com/in/rafael-anderson-moreira-vargas-bb2b92234/" target="_blank" class="btn btn-sm text-dark p-0"><i class="fab fa-2x fa-linkedin text-primary mr-2"></i></a>
+                        <a href="https://www.facebook.com/AnderMv936?mibextid=ZbWKwL" target="_blank" class="btn btn-sm text-dark p-0"><i class="fab fa-2x fa-facebook text-primary mr-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     Personas End -->
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5"><span class="px-2">Marcas</span></h2>
+        </div>
+        <div class="row px-xl-5">
+            <div class="col">
+                <div class="owl-carousel vendor-carousel">
+                    <div class="vendor-item p-4">
+                        <img src="off/img/marcas/mar1.png" alt="">
+                    </div>
+                    <div class="vendor-item p-4">
+                        <img src="off/img/marcas/mar2.png" alt="">
+                    </div>
+                    <div class="vendor-item p-4">
+                        <img src="off/img/marcas/mar3.png" alt="">
+                    </div>
+                    <div class="vendor-item p-4">
+                        <img src="off/img/marcas/mar4.png" alt="">
+                    </div>
+                    <div class="vendor-item p-4">
+                        <img src="off/img/marcas/mar5.png" alt="">
+                    </div>
+                    <div class="vendor-item p-4">
+                        <img src="off/img/marcas/mar6.png" alt="">
+                    </div>
+                    <div class="vendor-item p-4">
+                        <img src="off/img/marcas/mar7.png" alt="">
+                    </div>
+                    <div class="vendor-item p-4">
+                        <img src="off/img/marcas/mar8.png" alt="">
+                    </div>
+                    <div class="vendor-item p-4">
+                        <img src="off/img/marcas/mar9.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+
+    <!-- Footer Start -->
+    <footer class="container-fluid bg-secondary text-dark mt-5 pt-5">
+        <div class="row px-xl-5 pt-0">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <a href="" class="text-decoration-none">
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <div class="logo ">
+                            <div class="oval"></div>
+                            <div class="circle"></div>
+                            <div class="line"></div>
+                            <div class="text-icon">Preci
+                                <span class="color1"></span>
+                            </div>
+                            <div class="text-icon2">ff</div>
+                            <div class="text-icon3">on</div>
+                        </div>
+                    </div>
+                </a>
+                <p>Gracias por pasar por nuestra pagina, espero contactarnos pronto</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Santa Cruz - Bolivia</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>offerta@gmail.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+591 6900 6500</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-9 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Ubicaciones</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <div id="map"></div>
+                            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+                            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Boletin</h5>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 py-4" placeholder="Tu Nombre" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 py-4" placeholder="Tu Correo"
+                                    required="required" />
+                            </div>
+                            <div>
+                                <button class="btn btn-primary btn-block border-0 py-3" type="submit">Suscribirte</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../web/off/js/easing.min.js"></script>
+    <script src="../web/off/js/owl.carousel.min.js"></script>
+    <!-- Contact Javascript File -->
+    <script src="../web/off/js/jqBootstrapValidation.min.js"></script>
+    <script src="../web/off/js/contact.js"></script>
+    <!-- Template Javascript -->
+    <script src="../web/off/js/main.js"></script>
+    <script src="../web/off/js/productos.js"></script>
+</body>
+
+</html>
