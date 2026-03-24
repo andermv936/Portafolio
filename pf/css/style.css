@@ -1439,6 +1439,37 @@ section:last-child { border-bottom: none; }
   .exp-tab  { font-size: 12px; padding: 7px 14px; }
 }
 
+/*CORRECCION GANTT*/
+@media (max-width: 480px) {
+
+  /* Permitir scroll SOLO dentro del gantt */
+  .gantt-container,
+  .projects-gantt {
+    overflow-x: auto;
+  }
+
+  /* 🔥 CLAVE: eliminar min-width que rompe todo */
+  .gantt-years,
+  .gantt-timeline,
+  .proj-gantt-years,
+  .proj-gantt-timeline {
+    min-width: unset !important;
+  }
+
+  /* Ajustar columnas */
+  .gantt-label-col,
+  .gantt-row-label {
+    width: 90px;
+    flex-shrink: 0;
+  }
+
+  .proj-gantt-info {
+    width: 120px;
+    flex-shrink: 0;
+  }
+
+}
+
 /* ══════════════════════════════════════════════════════════════════
    EXPERIENCE TABS (Gantt + Detalle)
 ══════════════════════════════════════════════════════════════════ */
