@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todos los Proyectos · Rafael Moreira</title>
+  <link rel="shortcut icon" href="pf/images/icon/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="pf/css/icomoon.css">
+  <link rel="stylesheet" href="pf/css/style.css">
+</head>
+<body>
+<div class="proj-page">
+  <header class="proj-topbar">
+    <div class="proj-topbar-left">
+      <a class="proj-back" href="index.html"><i class="icon-arrow-left3"></i> Volver al inicio</a>
+      <span style="color:var(--border)">|</span>
+      <span class="proj-topbar-title">Todos los Proyectos</span>
+    </div>
+    <button class="proj-topbar-toggle" id="themeToggle">🌙 Modo Noche</button>
+  </header>
+  <div class="proj-hero" style="background:linear-gradient(135deg,#0F1623 0%,#1D4ED8 60%,#0891B2 100%);height:200px">
+    <div class="proj-hero-content">
+      <div class="proj-company-badge"><i class="icon-briefcase3"></i> Portafolio Completo</div>
+      <h1 class="proj-hero-title">Mis Proyectos</h1>
+    </div>
+  </div>
+  <div class="proj-body">
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;" id="filterBtns">
+      <button class="tab-btn active" data-cat="all">Todos</button>
+      <button class="tab-btn" data-cat="datos">Datos</button>
+      <button class="tab-btn" data-cat="app">Apps</button>
+      <button class="tab-btn" data-cat="web">Web</button>
+      <button class="tab-btn" data-cat="diseño">Diseño</button>
+    </div>
+    <div class="all-projects-grid" id="allGrid">
+      <div class="project-card" data-cats="datos" onclick="window.location='pf_pro1.html'" style="cursor:pointer">
+        <div class="project-thumb" style="background-image:url(pf/images/Proyectos/img-1.jpeg)">
+          <div class="project-thumb-overlay"><a href="pf_pro1.html">Ver Proyecto</a></div>
+        </div>
+        <div class="project-info">
+          <div class="project-company">Bellcos Bolivia</div>
+          <div class="project-title">Implementación Datos Logísticos</div>
+          <div class="project-desc">Centralización, limpieza y análisis de datos SAP. Dashboards en Power BI.</div>
+          <div class="project-tags"><span class="project-tag">SQL</span><span class="project-tag">PowerBI</span><span class="project-tag">Excel</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-cats="web" onclick="window.location='pf_pro2.html'" style="cursor:pointer">
+        <div class="project-thumb" style="background-image:url(pf/images/Proyectos/img-2.jpeg)">
+          <div class="project-thumb-overlay"><a href="pf_pro2.html">Ver Proyecto</a></div>
+        </div>
+        <div class="project-info">
+          <div class="project-company">Personal</div>
+          <div class="project-title">Diseño Portafolio Web</div>
+          <div class="project-desc">Portafolio profesional con modo oscuro, Gantt, galería y contacto. GitHub Pages.</div>
+          <div class="project-tags"><span class="project-tag">HTML</span><span class="project-tag">CSS</span><span class="project-tag">JavaScript</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-cats="diseño" onclick="window.location='pf_pro3.html'" style="cursor:pointer">
+        <div class="project-thumb" style="background-image:url(pf/images/Proyectos/img-3.jpeg)">
+          <div class="project-thumb-overlay"><a href="pf_pro3.html">Ver Proyecto</a></div>
+        </div>
+        <div class="project-info">
+          <div class="project-company">Personal</div>
+          <div class="project-title">Diseño Gráfico Vivienda</div>
+          <div class="project-desc">Diseño de proyecto de vivienda unifamiliar con Autocad.</div>
+          <div class="project-tags"><span class="project-tag">HTML</span><span class="project-tag">CSS</span><span class="project-tag">JavaScript</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-cats="diseño" onclick="window.location='pf_pro4.html'" style="cursor:pointer">
+        <div class="project-thumb" style="background-image:url(pf/images/Proyectos/img-4.jpeg)">
+          <div class="project-thumb-overlay"><a href="pf_pro4.html">Ver Proyecto</a></div>
+        </div>
+        <div class="project-info">
+          <div class="project-company">Bellcos</div>
+          <div class="project-title">Proceso Troquelado</div>
+          <div class="project-desc">Mejora y control de proceso de troquelado externo, con análisis de costos.</div>
+          <div class="project-tags"><span class="project-tag">HTML</span><span class="project-tag">CSS</span><span class="project-tag">JavaScript</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-cats="datos" onclick="window.location='pf_pro5.html'" style="cursor:pointer">
+        <div class="project-thumb" style="background-image:url(pf/images/Proyectos/img-8.jpg)">
+          <div class="project-thumb-overlay"><a href="pf_pro5.html">Ver Proyecto</a></div>
+        </div>
+        <div class="project-info">
+          <div class="project-company">Personal</div>
+          <div class="project-title">Experto Excel</div>
+          <div class="project-desc">Curso completo de excel básico-avanzado, con visual basic.</div>
+          <div class="project-tags"><span class="project-tag">HTML</span><span class="project-tag">CSS</span><span class="project-tag">JavaScript</span></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-cats="app datos" onclick="window.location='pf_pro8.html'" style="cursor:pointer">
+        <div class="project-thumb" style="background-image:url(pf/images/Proyectos/img-7.jpeg)">
+          <div class="project-thumb-overlay"><a href="pf_pro8.html">Ver Proyecto</a></div>
+        </div>
+        <div class="project-info">
+          <div class="project-company">Industrias Venado</div>
+          <div class="project-title">KPI Logísticos en la Nube</div>
+          <div class="project-desc">Indicadores de rendimiento con dashboards Power BI conectados a datos de múltiples sucursales.</div>
+          <div class="project-tags"><span class="project-tag">PowerBI</span><span class="project-tag">KPI</span><span class="project-tag">Cloud</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-cats="datos" onclick="window.location='pf_pro9.html'" style="cursor:pointer">
+        <div class="project-thumb" style="background-image:url(pf/images/Proyectos/img-6.jpeg)">
+          <div class="project-thumb-overlay"><a href="pf_pro9.html">Ver Proyecto</a></div>
+        </div>
+        <div class="project-info">
+          <div class="project-company">Industrias Venado</div>
+          <div class="project-title">WMS Almacenes</div>
+          <div class="project-desc">Levantamiento de layout, productos, posiciones y codigos de barra para control de movimientos.</div>
+          <div class="project-tags"><span class="project-tag">PowerBI</span><span class="project-tag">KPI</span><span class="project-tag">Cloud</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-cats="app datos" onclick="window.location='pf_pro10.html'" style="cursor:pointer">
+        <div class="project-thumb" style="background-image:url(pf/images/Proyectos/img-5.jpeg)">
+          <div class="project-thumb-overlay"><a href="pf_pro10.html">Ver Proyecto</a></div>
+        </div>
+        <div class="project-info">
+          <div class="project-company">Industrias Venado</div>
+          <div class="project-title">Aplicativo Logístico Integral</div>
+          <div class="project-desc">Aplicativo móvil AppSheet para despachos, inventario y KPIs en tiempo real con SQL Server.</div>
+          <div class="project-tags"><span class="project-tag">AppSheet</span><span class="project-tag">SQL</span><span class="project-tag">Python</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:32px;text-align:center">
+      <a href="index.html" class="btn btn-soft"><i class="icon-arrow-left3"></i> Volver al portafolio principal</a>
+    </div>
+  </div>
+</div>
+<script src="pf/js/project.js"></script>
+<script>
+  document.querySelectorAll('#filterBtns .tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#filterBtns .tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.getAttribute('data-cat');
+      document.querySelectorAll('#allGrid .project-card').forEach(card => {
+        card.style.display = (cat === 'all' || (card.getAttribute('data-cats') || '').includes(cat)) ? '' : 'none';
+      });
+    });
+  });
+</script>
+</body>
+</html>
